@@ -7,7 +7,7 @@
 ## Preview
 
 <p align="center">
-  <img src="LatentSalvia-base-v1-showcase.png" width="700">
+  <img src="LatentSalvia-base-v1-showcase.png" width="600">
 </p>
 
 > Screenshot captured from Terminal.app, showing the output of `ansi_showcase.sh`.
@@ -125,4 +125,4 @@ The showcase is intentionally designed to:
 
 ## License
 
-See [LICENSE](LICENSE).
+MIT License. 
