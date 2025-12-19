@@ -1,19 +1,16 @@
 # LatentSalvia
 
-**LatentSalvia** is a calm, high-contrast terminal theme designed for long research sessions.  
-It emphasizes semantic color usage, clear visual hierarchy, and low visual fatigue.
-
-The design is inspired by ideas from **representation learning**, **flow-based models**, and **vision–language alignment**: smooth structure, stable signals, and friendly but unambiguous feedback.
-
-LatentSalvia is optimized and tested on **macOS Terminal.app**.
+**LatentSalvia** is a _calm_, _cute_, and _confident_ terminal theme designed for long research and development sessions, optimized and tested on **macOS Terminal.app**.
 
 ---
 
 ## Preview
 
-![LatentSalvia ANSI Showcase](LatentSalvia-base-v1-showcase.png)
+<p align="center">
+  <img src="LatentSalvia-base-v1-showcase.png" width="700">
+</p>
 
-> Screenshot captured from Terminal.app using the real cursor, showing the output of `ansi_showcase.sh`.
+> Screenshot captured from Terminal.app, showing the output of `ansi_showcase.sh`.
 
 ---
 
@@ -22,9 +19,9 @@ LatentSalvia is optimized and tested on **macOS Terminal.app**.
 ```
 
 .
-├── LatentSalvia-base-v1.terminal      # Terminal.app profile (colors, font, ANSI)
-├── ansi_showcase.sh                   # Single-screen ANSI showcase script
-├── LatentSalvia-base-v1-showcase.png  # Screenshot of the showcase output
+├── LatentSalvia-base-v1.terminal      # Terminal.app profile
+├── ansi_showcase.sh                   # ANSI showcase script
+├── LatentSalvia-base-v1-showcase.png  # Screenshot of the ansi_showcase.sh output
 ├── README.md
 └── LICENSE
 
@@ -35,23 +32,18 @@ LatentSalvia is optimized and tested on **macOS Terminal.app**.
 ## Installation (macOS Terminal.app)
 
 1. Open **Terminal → Settings → Profiles**
-2. Click the gear icon → **Import…**
+2. Click the circle icon at the bottom left → **Import…**
 3. Select `LatentSalvia-base-v1.terminal`
 4. (Optional) Set it as the default profile
 
----
 
-## Prompt Color Style (Important)
+### Prompt Color Style (Important)
 
-LatentSalvia uses an explicitly colored prompt to clearly separate:
-
-- **prompt** (user input)
-- **command output**
-- **semantic highlights**
+LatentSalvia uses an explicitly colored prompt.
 
 Add the following to your `~/.zshrc`:
 
-```bash
+```zsh
 # Prompt color separation (Menlo-friendly, soft theme)
 PROMPT='%F{245}%n@%m%f %F{108}%~%f %F{229}%%%f '
 
@@ -65,11 +57,9 @@ This results in:
 * **Working directory** → sage green
 * **Prompt symbol (`%`)** → warm yellow
 
-This hierarchy greatly improves scanability during long sessions.
-
 Apply changes with:
 
-```bash
+```zsh
 source ~/.zshrc
 ```
 
@@ -119,15 +109,14 @@ source ~/.zshrc
 
 ## ANSI Showcase Script
 
-To verify the theme on your system:
+To verify the theme on your Mac:
 
-```bash
-bash ansi_showcase.sh
+```zsh
+zsh ansi_showcase.sh
 ```
 
 The showcase is intentionally designed to:
 
-* fit within a single terminal screen (29 lines at font size 24)
 * demonstrate realistic scenarios (`ls`, logs, git diff)
 * show both **normal** and **bright** ANSI colors
 * serve as a visual regression test after any changes
@@ -137,15 +126,3 @@ The showcase is intentionally designed to:
 ## License
 
 See [LICENSE](LICENSE).
-
----
-
-## Philosophy
-
-LatentSalvia favors:
-
-* calm contrast over aggressive brightness
-* semantic consistency over decoration
-* friendliness without ambiguity
-
-It is meant to be lived in, not just looked at.
